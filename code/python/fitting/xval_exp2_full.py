@@ -92,7 +92,7 @@ else:
     model_suffix = '_pm'
     added_fixed = {'temperature': 1}  # Example of adding a fixed param for power smoothing
 
-data_dir = f'results/cross_validation/exp2_cond_' + args.optimizer.lower()
+data_dir = f'../data/cross_validation/exp2_cond_' + args.optimizer.lower()
 if not os.path.exists(data_dir):
     os.makedirs(data_dir)
 

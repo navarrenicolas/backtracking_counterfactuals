@@ -1,4 +1,4 @@
-# Python readme
+# Python README
 
 ## Folder structure
 
@@ -15,30 +15,44 @@
 │   ├── fit_exp2_full.py
 │   ├── xval_exp2_full.py
 ├── notebooks
-│   ├── modeling_order_effects.ipynb
+│   ├── order_effects.ipynb
+│   ├── analyses.ipynb
+│   ├── results.ipynb
 ```
 
 ## Code Breakdown
 
 ### CfModels
 
-This is the is a class for modelling counterfacual inference in probabilistic grapchical models building on the ([pgmpy](https://pgmpy.org/)) library.
+This is a class for modeling counterfactual inference in probabilistic graphical models building on the ([pgmpy](https://pgmpy.org/)) library.
 Extra modules for ease of use in other documents:
-- Preset graphical representations: `CfModels/networks.pu`
+- Preset graphical representations: `CfModels/networks.py`
 - Visualization tools: `CfModels/plotting.py`
 - Extraneous functions: `CfModels/utils.py`
 
 ### notebooks
 
-These are tutorials for using the the `CfModels` module for sequential counterfactual inference.
+These are tutorials for using the `CfModels` module for sequential counterfactual inference.
 
+#### `order_effects.ipynb`
+
+This document provides an interactive demo of the order effect predictions while varying parameter values.
+Further demonstration of the counterfactual inference and sequential inference process is described here.
+
+#### `results.ipynb`
+
+This document recreates the figure and tables from the paper using the model fit data in `../../data/model_fits/`
+
+#### `analyses.ipynb`
+
+This notebook contains supplementary analyses and model comparisons.
 
 ### fitting
 
-These python scripts fit the counterfactual reasoning models to the order effecs data found in 
-`../data/experiment2.csv`. This is a cleaned file of the original data from Gerstenbeg et al.'s (2013) Experiment 2. The original data is in `../data/experiment2.xls`.
+These python scripts fit the counterfactual reasoning models to the order effects data found in 
+`../data/data_2/experiment2.csv`. This is a cleaned file of the original data from Gerstenbeg et al.'s (2013) Experiment 2. The original data is in `../data/data_2/experiment2.xls`.
 
-Both scripts make use of option flags toset the parameters of the fitting process. Below is a list of all the argument flags that can be chosen.
+Both scripts make use of option flags to set the parameters of the fitting process. Below is a list of all the argument flags that can be chosen.
 
 
 #### `fit_exp2_full.py` 
@@ -117,7 +131,8 @@ python fitting/xval_exp2.py --use_power_method 1 --use_paper_ablations 1
 
 
 
-
 ## References
 
 Gerstenberg, T., Bechlivanidis, C., & Lagnado, D. A. (2013). Back on track: Backtracking in counterfactual reasoning. In Proceedings of the 35th Annual Conference of the Cognitive Science Society, Austin, TX, 2013 (pp. 2386-2391). Cognitive Science Society.
+
+Ankur Ankan, & Johannes Textor (2024). pgmpy: A Python Toolkit for Bayesian Networks. Journal of Machine Learning Research, 25(265), 1-8.
