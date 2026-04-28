@@ -20,6 +20,26 @@
 │   ├── results.ipynb
 ```
 
+## Python Environment
+
+To create an environment and install dependencies:
+
+```
+conda env create -f environment.yml
+```
+
+Then you can activate the environment and open a jupyter lab to view the code:
+
+```
+conda activate cf_order_effects_env
+```
+
+To launch a jypyter lab environment:
+```
+jupyter notebook
+```
+
+
 ## Code Breakdown
 
 ### CfModels

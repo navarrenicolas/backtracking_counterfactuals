@@ -1,0 +1,19 @@
+name: cf_order_effects_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - jupyter
+  - notebook
+  - ipywidgets
+  - ipython
+  - seaborn
+  - pip
+  - pip:
+      - joblib==1.5.2
+      - matplotlib==3.10.6
+      - numpy==2.2.6
+      - pandas==3.0.2
+      - scipy==1.15.2
+      - pgmpy==1.0.0
+      - opt_einsum==3.4.0
