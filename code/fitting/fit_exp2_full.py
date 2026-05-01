@@ -6,7 +6,7 @@ import sys
 # Ensure we can see the CfModels package (since notebook is in a subdir)
 sys.path.append(os.path.abspath('..'))
 
-import CfModels
+import code.CfModels as CfModels
 
 # Define structures to fit
 
@@ -61,7 +61,7 @@ ablation_names = [
 ablations_dict = {name: params for name, params in zip(ablation_names, ablations)}
 
 # Load experiment 2 data
-exp2_data = pd.read_csv('../../../data/data_2/experiment_2.csv')
+exp2_data = pd.read_csv('../../data/experiment_data/experiment_2.csv')
 
 
 # Define inference methods with different smoothing
@@ -92,7 +92,7 @@ else:
     model_suffix = '_pm'
     added_fixed = {'temperature': 1}  # Example of adding a fixed param for power smoothing
 
-data_dir = '../data/fits/exp2_' + args.optimizer.lower()
+data_dir = '../../data/model_fits/fits/exp2_' + args.optimizer.lower()
 if not os.path.exists(data_dir):
     os.makedirs(data_dir)
 

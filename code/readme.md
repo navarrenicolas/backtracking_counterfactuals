@@ -36,7 +36,7 @@ conda activate cf_order_effects_env
 
 To launch a jypyter lab environment:
 ```
-jupyter notebook
+jupyter lab
 ```
 
 
@@ -70,7 +70,7 @@ This notebook contains supplementary analyses and model comparisons.
 ### fitting
 
 These python scripts fit the counterfactual reasoning models to the order effects data found in 
-`../data/data_2/experiment2.csv`. This is a cleaned file of the original data from Gerstenbeg et al.'s (2013) Experiment 2. The original data is in `../data/data_2/experiment2.xls`.
+`../data/empirical_data/experiment2.csv`. This is a cleaned file of the original data from Gerstenbeg et al.'s (2013) Experiment 2. The original data is in `../data/empirical_data/experiment2.xls`.
 
 Both scripts make use of option flags to set the parameters of the fitting process. Below is a list of all the argument flags that can be chosen.
 

@@ -8,15 +8,16 @@ This repository contains the code and figures used in the paper "Explaining Orde
 
 ```
 ├─– code
-│   ├── python
-│   │   ├── python-readme.md
-│   │   ├── ...
+│   ├── readme.md
+│   ├── ...
 ├── data
-│   ├── data_2
+│   ├── experiment_data
+│   │   ├── readme.txt
 │   │   ├── ...
 │   ├── model_fits
 │   │   ├── cross_validation
 │   │   ├── full_data
+├─– README.md
 ```
 
 All model code and analyses are found in the `./code/python/` directory including:
@@ -24,7 +25,7 @@ All model code and analyses are found in the `./code/python/` directory includin
 - results
 - analyses
 
-The data is separated based on the original study data `data/data_2/` and the model results in `data/model_fits`.
+The data is separated based on the original study data `data/experiment_data/` and the model results in `data/model_fits`.
 
 ## CRediT
 
