@@ -61,11 +61,12 @@ Further demonstration of the counterfactual inference and sequential inference p
 
 #### `results.ipynb`
 
-This document recreates the figure and tables from the paper using the model fit data in `../../data/model_fits/`
+This document recreates the figure and tables from the paper using the model fit data in `../../data/model_fits/`.
 
 #### `analyses.ipynb`
 
-This notebook contains supplementary analyses and model comparisons.
+This notebook contains supplementary analyses and model comparisons. 
+We demonstrate the robustness of out findings across several structural assumptions.
 
 ### fitting
 
